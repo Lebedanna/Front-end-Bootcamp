@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Info</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="navbar navbar-expand justify-content-center navbar-dark flex-column flex-md-row bd-navbar">
+    <div class="navbar-nav-scroll">
+        <ul class="navbar-nav bd-navbar-nav flex-row">
+            <li class="nav-item">
+                <a class="nav-link " href="index.html">Calculator</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="student-info.html">About me</a>
+            </li>
+        </ul>
+    </div>
+</header>
+<div class="about">
+    <h1 class="text-center">Lebed Anna L`vovna (arnellma) </h1>
+    <div class="d-flex justify-content-between m-auto">
+        <img src="../../../misc/images/profile.gif">
+        <div class="m-auto">
+            <div class="d-flex align-content-center justify-content-md-around">
+                <p class="m-1 text-sm-left">Studying experience (since October 2022):</p>
+                <div id="years" class="m-1"></div>
+                <div id="days" class="m-1"></div>
+            </div>
+            <div class="d-flex">
+                <p class="m-1">Age:</p>
+                <div id="birthYears" class="m-1"></div>
+                <div id="birthDays" class="m-1"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>Sorry for my design I have autism</footer>
+</body>
+<script>
+    let currentDate = new Date()
+    let startDate = new Date('Fri Oct 21 2022 13:00:00 GMT+0300 (GMT+03:00)')
+    let rawDate = (currentDate - Date.parse(startDate))/86400000;       //86400000 - ms в дне
+    let years = Math.floor(rawDate / 365)
+    let days = Math.round(rawDate % 365)
+    let yearsLabel = 'year'
+    if (years > 1) {
+        yearsLabel = 'years'
+    }
+    document.getElementById("days").innerHTML = days + " days"
+    document.getElementById("years").innerHTML = years + ' ' + yearsLabel
+
+    let birthDate = new Date('Fri Sep 27 2002 15:40:00 GMT+0300 (GMT+03:00)')
+    let rawBirthDate = (currentDate - Date.parse(birthDate))/86400000;       //86400000 - ms в дне
+    let birthYears = Math.floor(rawBirthDate / 365)
+    document.getElementById("birthYears").innerHTML = birthYears
+</script>
+</html>

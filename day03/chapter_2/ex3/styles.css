@@ -1,0 +1,131 @@
+body {
+    background-color: #c0ffb6;
+    font-family: "Roboto Light", sans-serif;
+    margin: 2rem auto 0 auto;
+    max-width: 50rem;
+    justify-content: center;
+}
+
+header {
+    color: black;
+    font-size: 30px;
+    margin: 1rem 0;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 15px;
+}
+
+.navbar {
+    align-items: center;
+    color: black;
+    background-color: deeppink;
+}
+
+.input-group {
+    max-width: 400px;
+    max-height: 60px;
+    margin: 3px;
+    padding: 20px;
+    background-color: white;
+    border-color: deeppink;
+    border-radius: 15px;
+    font-size: 25px;
+    color: black;
+}
+
+.fieldarea {
+    margin-left: 97px;
+    margin-right: 37px;
+}
+
+.keyboard {
+    max-width: 25rem;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 200px);
+    grid-template-areas:
+    "b-1 b-2 b-3 b-plus"
+    "b-4 b-5 b-6 b-minus"
+    "b-7 b-8 b-9 b-multiply"
+    "b-divide b-0 b-dot b-equals";
+    gap: 5px;
+    justify-content: center;
+}
+
+.container {
+    max-width: 400px;
+}
+
+.child-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 3px;
+    padding: 20px;
+}
+
+img {
+    border-radius: 100px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    align-self: center;
+}
+
+.nav-link .active {
+    color: black;
+}
+
+.about {
+    background-color: white;
+    padding: 20px;
+    border: 5px solid deeppink;
+    border-radius: 15px;
+}
+
+#field {
+    grid-area: field;
+    text-align: start;
+}
+
+.clear {
+    grid-area: c-button;
+    background-color: deeppink;
+    color: white;
+    padding: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    max-width: 10px;
+    max-height: 10px;
+    margin: auto;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#one { grid-area: b-1; }
+#two { grid-area: b-2; }
+#three { grid-area: b-3; }
+#plus { grid-area: b-plus; }
+#four { grid-area: b-4; }
+#five { grid-area: b-5; }
+#six { grid-area: b-6; }
+#minus { grid-area: b-minus; }
+#seven { grid-area: b-7; }
+#eight { grid-area: b-8; }
+#nine { grid-area: b-9; }
+#multiply { grid-area: b-multiply; }
+#divide { grid-area: b-divide; }
+#zero { grid-area: b-0; }
+#dot { grid-area: b-dot; }
+#equals { grid-area: b-equals; }

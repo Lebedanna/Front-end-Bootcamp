@@ -1,0 +1,68 @@
+body {
+    background-color: #c0ffb6;
+    font-family: "Roboto Light", sans-serif;
+    margin: 2rem auto 0 auto;
+    max-width: 50rem;
+    justify-content: center;
+}
+
+.calc-header {
+    text-align: center;
+}
+
+
+.keyboard {
+    max-width: 25rem;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    grid-template-rows: repeat(5, 60px);
+    grid-template-areas:
+    "field field field clear"
+    "b-1 b-2 b-3 b-plus"
+    "b-4 b-5 b-6 b-minus"
+    "b-7 b-8 b-9 b-multiply"
+    "b-divide b-0 b-dot b-equals";
+    gap: 5px;
+    justify-content: center;
+}
+
+#field {
+    text-align: start;
+    grid-area: field;
+}
+
+#clear {
+    grid-area: clear;
+    background-color: deeppink;
+    color: white;
+    padding: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    max-width: 10px;
+    max-height: 10px;
+    margin: auto;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#one { grid-area: b-1; }
+#two { grid-area: b-2; }
+#three { grid-area: b-3; }
+#plus { grid-area: b-plus; }
+#four { grid-area: b-4; }
+#five { grid-area: b-5; }
+#six { grid-area: b-6; }
+#minus { grid-area: b-minus; }
+#seven { grid-area: b-7; }
+#eight { grid-area: b-8; }
+#nine { grid-area: b-9; }
+#multiply { grid-area: b-multiply; }
+#divide { grid-area: b-divide; }
+#zero { grid-area: b-0; }
+#dot { grid-area: b-dot; }
+#equals { grid-area: b-equals; }

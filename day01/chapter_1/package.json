@@ -1,0 +1,15 @@
+{
+  "name": "chapter_1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "classes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@repos-ssh.21-school.ru:2289/students/Front_bootcamp_day01.ID_884292/arnellma_student.21_school.ru/Front_bootcamp_day01-1.git"
+  },
+  "private": true
+}
